@@ -98,7 +98,7 @@ public class Field extends StackPane {
     } else if (e.getButton() == MouseButton.SECONDARY) {
       fieldNode.setFill(Color.RED);
       bombCount.setVisible(false);
-    } else if (e.getButton() == MouseButton.PRIMARY && bomb == true) {
+    } if (e.getButton() == MouseButton.PRIMARY && bomb == true) {
       System.exit(0);
     }
   }
